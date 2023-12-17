@@ -8,19 +8,19 @@ Nessa seção, foi retratado, como aspecto-chave, a transição de uma equipe em
 
 Sendo assim, uma equipe tradicional do primeiro modelo teria a divisão dos seguintes cargos:
 
-- IT Solutions Architect
-- System Administrator
-- Network Administrator
-- Desktop Administrator
-- Applications Administrator
-- Database Administrator
+- IT Solutions Architect;
+- System Administrator;
+- Network Administrator;
+- Desktop Administrator;
+- Applications Administrator;
+- Database Administrator.
 
 Enquanto a nova equipe contaria com as seguintes funções:
 
-- Cloud Architect
-- System Administrator
-- Security Administrator
-- DevOps Administrator
+- Cloud Architect;
+- System Administrator;
+- Security Administrator;
+- DevOps Administrator.
 
 ## 2° curso: AWS Cloud Practitioner Essentials
 
@@ -28,9 +28,9 @@ Enquanto a nova equipe contaria com as seguintes funções:
 
 Aqui foram apresentados os três modelos com os quais se pode trabalhar utilizando os serviços de computação em nuvem da Amazon, sendo eles:
 
-- Cloud
-- Hybrid
-- On-Premises (Private Cloud Deployment)
+- Cloud;
+- Hybrid;
+- On-Premises (Private Cloud Deployment).
 
 Ao se utilizar serviços como o **Amazon EC2** (Amazon Elastic Compute Cloud), por exemplo, segue-se um modelo escalável conhecido como **pay-as-you-go**, que permite ter despesas variáveis sem a preocupação com excessos ou limitações da capacidade do servidor. Com isso, é possível distribuir os sistemas com baixa latência, para diversos consumidores localizados ao redor do mundo.
 
@@ -43,9 +43,9 @@ Artigos recomendáveis que sintetizam tais ideias são:
 
 **Compute as a Service (CaaS)**: Modelo utilizado pelas instâncias de Amazon EC2 sob a ideia de **multitenancy**, em que hardwares de máquinas virtuais são compartilhados de uma maneira verticalmente escalável e segura. São três as etapas para seu funcionamento:
 
-- Launch
-- Connect
-- Use
+- Launch;
+- Connect;
+- Use.
 
 Sendo assim, há vários tipos de instância da Amazon EC2, como:
 
@@ -57,17 +57,17 @@ Sendo assim, há vários tipos de instância da Amazon EC2, como:
 
 Dessa forma, há várias possibilidades de custeamento para essas instâncias, sendo elas:
 
-- **On-Demand**, para trabalhos imprevisíveis a curto-prazo
-- **Standard Reserved Instances**, para a especificação da família, tamanho, plataforma, locação e região em período de 1 ou 3 anos
-- **Convertible Reserved Instances**, para mais descontos ao se flexibilizar a zona de disponibilidade da instância, em contrato de 1 ou 3 anos
-- **EC2 Instance Saving Plans**, para a assumida de um comprometimento de gasto por hora em uma família, por 1 ou 3 anos
-- **Spot Instances**, para realização de tarefas passíveis de interrupção de acordo com as capacidades disponíveis no momento
-- **Dedicated Hosts**, para o licenciamento de uma reserva de socket, core ou máquina virtual
+- **On-Demand**, para trabalhos imprevisíveis a curto-prazo.
+- **Standard Reserved Instances**, para a especificação da família, tamanho, plataforma, locação e região em período de 1 ou 3 anos.
+- **Convertible Reserved Instances**, para mais descontos ao se flexibilizar a zona de disponibilidade da instância, em contrato de 1 ou 3 anos.
+- **EC2 Instance Saving Plans**, para a assumida de um comprometimento de gasto por hora em uma família, por 1 ou 3 anos.
+- **Spot Instances**, para realização de tarefas passíveis de interrupção de acordo com as capacidades disponíveis no momento.
+- **Dedicated Hosts**, para o licenciamento de uma reserva de socket, core ou máquina virtual.
 
 O manejo dessas instâncias pode ser feito com a utilização do **Amazon EC2 Auto Scaling**, que automaticamente adiciona ou encerra instâncias de Amazon EC2 conforme as variações de demanda, dentro de um espectro mínimo, desejado e máximo (**Auto scaling group**), reduzindo-se as despesas. Isso pode ocorrer de duas maneiras:
 
-- Dynamic scaling
-- Predictive scaling
+- Dynamic scaling;
+- Predictive scaling.
 
 **Elastic Load Balancing**: Serviço da AWS que, partindo de um único ponto de host, distribui automaticamente o tráfico para os recursos de back-end mais adequados, a nível regional, e aumentando ou diminuindo sua capacidade conforme aos diferentes períodos de demanda. Isso evita sobrecargas em uma única instância.
 
@@ -90,3 +90,32 @@ Outros serviços computacionais oferecidos pela Amazon, referentes ao conceito d
 Há um resumo sobre esses tópicos disponível em:
 
 - [Compute on AWS](https://aws.amazon.com/products/compute)
+
+### Módulo 3: Global Infrastructure And Reliability
+
+**Regions**: Área geográfica isolada que contém recursos da AWS, com três ou mais Availability Zones.
+
+**Availability Zones**: Um data center ou grupo de data centers dentro de uma Região, localizados a dezenas de milhas de distância um dos outros, para prevenir erros a partir de desastres e garantir baixa latência.
+
+**Edge Location**: Data center utilizado para performar operações específicas, a partir da armazenagem de cópias de dados em cache em localizações mais próximas dos clientes, para aumento da velocidade de entrega.
+
+**Amazon CloudFront**: Serviço de delivery de conteúdos (como vídeos, fotos e páginas web) a partir de uma rede de edge locations.
+
+**AWS Outposts**: Serviço para rodar infraestrutura, serviços e ferramentas da AWS em data centers próprios (on-premises), em uma abordagem híbrida de nuvem.
+
+Existem diversas maneiras de interagir com os serviços da AWS, como:
+
+- **AWS Management Console**: Interface web manual de assistentes e fluxo de trabalhos utilizado para performar tarefas na AWS. 
+- **AWS Command Line Interface (CLI)**: Interface para automatizar ações em serviços da AWS a partir de scripts.
+- **AWS Software Development Kits (SDKs)**: Maneiras de desenvolver aplicações na AWS em linguagens de programação suportadas.
+- **AWS Elastic Beanstalk**: Serviço que implanta recursos a partir de códigos e da definição de configurações, para tarefas como ajustar a capacidade, balancear a carga, escalar automaticamente e monitorar a saúde da aplicação.
+- **AWS CloudFormation**: Serviço que permite a construção de ambientes a partir de linhas de código replicáveis em JSON ou YAML.
+
+A seleção de uma região leva em consideração diversos fatores, sendo eles:
+
+- **Conformidade** com requerimentos legais de gestão de dados;
+- **Proximidade** aos consumidores;
+- **Disponibilidade** de serviços;
+- **Preço** de cada estrutura.
+
+De tal modo que se recomenda a escolha de, ao menos, 2 zonas de disponibilidade por região.
