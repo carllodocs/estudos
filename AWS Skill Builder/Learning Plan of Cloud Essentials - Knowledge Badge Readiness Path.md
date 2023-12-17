@@ -118,4 +118,6 @@ A seleção de uma região leva em consideração diversos fatores, sendo eles:
 - **Disponibilidade** de serviços;
 - **Preço** de cada estrutura.
 
-De tal modo que se recomenda a escolha de, ao menos, 2 zonas de disponibilidade por região.
+De tal modo que se recomenda a escolha de, ao menos, 2 zonas de disponibilidade por região, conforme o seguinte mapa:
+
+- [Global Infrastructure Regions & AZs](https://aws.amazon.com/about-aws/global-infrastructure/regions_az)
